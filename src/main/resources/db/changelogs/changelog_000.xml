@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.5.xsd">
+        
+    <changeSet id="1" author="bas.de.vos@42.nl">
+
+        <createTable tableName="collector">
+            <column name="id" type="bigint" autoIncrement="true" startWith="1">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="name" type="varchar(64)" >
+                <constraints nullable="false" unique="true" uniqueConstraintName="uk_collector_name" />
+            </column>
+            <column name="version" type="int"/>
+        </createTable>
+
+        <createTable tableName="collectors_item">
+            <column name="id" type="bigint" autoIncrement="true" startWith="1">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="collector_id" type="bigint">
+                <constraints nullable="false" references="collector(id)" foreignKeyName="fk_collectors_item_collector_id" />
+            </column>
+            <column name="dtype" type="varchar(8)"/>
+            <column name="name" type="varchar(256)"/>
+
+            <!-- Movie -->
+            <column name="imdb_url" type="varchar(256)"/>
+            <!-- Album -->
+            <column name="spotify_url" type="varchar(256)"/>
+            <column name="artist" type="varchar(256)"/>
+            <!-- Book -->
+            <column name="amazon_url" type="varchar(256)"/>
+            <column name="author" type="varchar(256)"/>
+
+            <column name="version" type="int"/>
+        </createTable>
+        <createIndex tableName="collectors_item"
+                     indexName="ix_collectors_item_collector_id">
+            <column name="collector_id"/>
+        </createIndex>
+
+    </changeSet>
+
+</databaseChangeLog>

@@ -1,0 +1,13 @@
+server:
+  context-path: /api
+spring:
+  datasource:
+    platform: h2
+  jpa:
+    hibernate:
+      ddl-auto: validate
+liquibase:
+  change-log: classpath:db/changelog.xml
+logging:
+  level:
+    root: ERROR
