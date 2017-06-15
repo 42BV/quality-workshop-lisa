@@ -2,7 +2,10 @@ server:
   context-path: /api
 spring:
   datasource:
-    platform: h2
+    platform: postgresql
+    url: jdbc:postgresql://localhost:5432/postgres
+    username: postgres
+    password: postgres
   jpa:
     hibernate:
       ddl-auto: validate
@@ -10,4 +13,4 @@ liquibase:
   change-log: classpath:db/changelog.xml
 logging:
   level:
-    root: ERROR
+    root: INFO
