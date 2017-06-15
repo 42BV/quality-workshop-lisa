@@ -4,7 +4,11 @@ import static org.springframework.util.Assert.isTrue;
 import static org.springframework.util.Assert.notNull;
 
 import java.io.InputStream;
+import java.util.ArrayList;
 import java.util.Collection;
+import java.util.List;
+
+import javax.annotation.PostConstruct;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -19,6 +23,7 @@ import nl._42.qualityws.cleancode.collectors_item.Book;
 import nl._42.qualityws.cleancode.collectors_item.CollectorsItem;
 import nl._42.qualityws.cleancode.collectors_item.Movie;
 import nl._42.qualityws.cleancode.collectors_item.service.csv.CollectorsItemCsvReaderFacade;
+import nl._42.qualityws.cleancode.collectors_item.service.imdb.ImdbClient;
 
 @Service
 public class CollectorsItemService {
@@ -52,10 +57,40 @@ public class CollectorsItemService {
     @Autowired
     private BookValidator bookValidator;
 
+    @Autowired
+    private ImdbClient imdbClient;
+
+    private List<PostProcessor<? extends CollectorsItem>> postProcessors = new ArrayList<>();
+
+    @PostConstruct
+    public void setupPostProcessors() {
+        postProcessors.add(imdbClient);
+    }
+
     public <T extends CollectorsItem> T create(T item) {
         notNull(item, "Collectors' item to create may not be null");
         isTrue(item.isNew(), "Cannot create existing collectors' item");
+        return save(item);
+    }
+
+    private <T extends CollectorsItem> T createOrUpdate(T item) {
+        if (item.isNew()) {
+            return create(item);
+        } else {
+            return save(item);
+        }
+    }
+
+    private <T extends CollectorsItem> T save(T item) {
+        item = postProcessItem(item);
         return collectorsItemRepository.save(item);
+    }
+
+    private <T extends CollectorsItem> T postProcessItem(T item) {
+        for (PostProcessor<? extends CollectorsItem> postProcessor : postProcessors) {
+            postProcessor.process(item);
+        }
+        return item;
     }
 
     public void importBooks(InputStream bookStream) {
@@ -78,7 +113,7 @@ public class CollectorsItemService {
             if (!validator.validate(item)) {
                 continue;
             }
-            collectorsItemRepository.save(mergeItem(item));
+            createOrUpdate(mergeItem(item));
         }
     }
 
