@@ -26,6 +26,9 @@
         
         <beanie.version>2.4.0</beanie.version>
         <database-truncator.version>0.4.0</database-truncator.version>
+
+        <spring-boot-docker-postgres.version>0.7.0</spring-boot-docker-postgres.version>
+        <spring-boot-starter-docker.version>0.7.0</spring-boot-starter-docker.version>
     </properties>
 
     <dependencies>
@@ -53,14 +56,30 @@
         </dependency>
         
         <dependency>
-            <groupId>com.h2database</groupId>
-            <artifactId>h2</artifactId>
-            <scope>provided</scope>
-        </dependency>
-        <dependency>
             <groupId>nl.42</groupId>
             <artifactId>beanie</artifactId>
             <version>${beanie.version}</version>
+            <scope>provided</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>org.postgresql</groupId>
+            <artifactId>postgresql</artifactId>
+            <scope>provided</scope>
+        </dependency>
+
+        <!-- Docker | Postgres dependencies -->
+        <dependency>
+            <groupId>nl.42</groupId>
+            <artifactId>spring-boot-starter-docker</artifactId>
+            <version>${spring-boot-starter-docker.version}</version>
+            <scope>provided</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>nl.42</groupId>
+            <artifactId>spring-boot-docker-postgres</artifactId>
+            <version>${spring-boot-docker-postgres.version}</version>
             <scope>provided</scope>
         </dependency>
 
@@ -70,6 +89,7 @@
             <version>${database-truncator.version}</version>
             <scope>test</scope>
         </dependency>
+
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
