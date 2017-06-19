@@ -1,10 +1,12 @@
 package nl._42.qualityws.cleancode.user;
 
 import javax.persistence.Entity;
+import javax.persistence.Table;
 
 import nl._42.qualityws.cleancode.shared.entity.AbstractEntity;
 
 @Entity
+@Table(name = "app_user")
 public class User extends AbstractEntity {
 
     private String name;

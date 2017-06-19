@@ -16,7 +16,7 @@ public class UserService {
     }
 
     public List<User> findByEmail(String email) {
-        return userRepository.findUpperEmail(email);
+        return userRepository.findByEmailIgnoreCase(email);
     }
 
 }

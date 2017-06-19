@@ -51,12 +51,13 @@
             <artifactId>csveed</artifactId>
             <version>0.5.0</version>
         </dependency>
-        
+
         <dependency>
-            <groupId>com.h2database</groupId>
-            <artifactId>h2</artifactId>
+            <groupId>org.postgresql</groupId>
+            <artifactId>postgresql</artifactId>
             <scope>provided</scope>
         </dependency>
+
         <dependency>
             <groupId>nl.42</groupId>
             <artifactId>beanie</artifactId>
