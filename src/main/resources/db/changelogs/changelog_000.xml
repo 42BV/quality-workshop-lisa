@@ -6,6 +6,19 @@
         
     <changeSet id="1" author="bas.de.vos@42.nl">
 
+        <createTable tableName="user">
+            <column name="id" type="bigint" autoIncrement="true" startWith="1">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="name" type="varchar(64)" >
+                <constraints nullable="false" unique="true" uniqueConstraintName="uk_user_name" />
+            </column>
+            <column name="email" type="varchar(256)" >
+                <constraints nullable="false" unique="true" uniqueConstraintName="uk_user_email" />
+            </column>
+            <column name="version" type="int"/>
+        </createTable>
+
         <createTable tableName="collector">
             <column name="id" type="bigint" autoIncrement="true" startWith="1">
                 <constraints primaryKey="true" nullable="false"/>
