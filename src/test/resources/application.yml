@@ -10,4 +10,4 @@ liquibase:
   change-log: classpath:db/changelog.xml
 logging:
   level:
-    root: ERROR
+    root: INFO
