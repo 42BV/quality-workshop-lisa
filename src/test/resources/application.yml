@@ -11,6 +11,11 @@ spring:
       ddl-auto: validate
 liquibase:
   change-log: classpath:db/changelog.xml
+collector:
+  imdb:
+    wiremock-port: 8089
+    imdb-url: http://www.imdb.com
+    start-wiremock-server: true
 logging:
   level:
     root: INFO

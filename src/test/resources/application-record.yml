@@ -1,0 +1,3 @@
+collector:
+  imdb:
+    start-wiremock-server: false

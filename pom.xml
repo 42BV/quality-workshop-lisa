@@ -28,6 +28,7 @@
         <database-truncator.version>0.4.0</database-truncator.version>
         <spring-boot-docker-postgres.version>0.7.0</spring-boot-docker-postgres.version>
         <spring-boot-starter-docker.version>0.7.0</spring-boot-starter-docker.version>
+        <wiremock.version>2.6.0</wiremock.version>
     </properties>
 
     <dependencies>
@@ -66,6 +67,13 @@
             <groupId>nl.42</groupId>
             <artifactId>spring-boot-docker-postgres</artifactId>
             <version>${spring-boot-docker-postgres.version}</version>
+            <scope>provided</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>com.github.tomakehurst</groupId>
+            <artifactId>wiremock</artifactId>
+            <version>${wiremock.version}</version>
             <scope>provided</scope>
         </dependency>
 

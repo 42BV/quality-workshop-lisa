@@ -1,0 +1,4 @@
+collector:
+  imdb:
+    wiremock-port:
+    start-wiremock-server: false
