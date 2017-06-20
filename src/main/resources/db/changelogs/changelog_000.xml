@@ -41,6 +41,7 @@
 
             <!-- Movie -->
             <column name="imdb_url" type="varchar(256)"/>
+            <column name="imdb_rating" type="varchar(5)"/>
             <!-- Album -->
             <column name="spotify_url" type="varchar(256)"/>
             <column name="artist" type="varchar(256)"/>

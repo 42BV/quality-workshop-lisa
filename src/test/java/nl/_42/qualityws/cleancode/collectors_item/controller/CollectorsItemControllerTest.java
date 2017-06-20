@@ -224,6 +224,9 @@ public class CollectorsItemControllerTest extends AbstractWebIntegrationTest {
         
         Page<Movie> movies = service.listMovies(new PageRequest(0, 10));
         assertEquals(11, movies.getTotalElements());
+        Movie movie = movies.getContent().get(0);
+        assertEquals("The Shawshank Redemption", movie.getName());
+        assertEquals("9.3", movie.getImdbRating());
     }
     
     @Test

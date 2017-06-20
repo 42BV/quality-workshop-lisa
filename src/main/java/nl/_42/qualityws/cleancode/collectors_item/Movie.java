@@ -9,6 +9,8 @@ public class Movie extends CollectorsItem {
 
     private String imdbUrl;
 
+    private String imdbRating;
+
     public String getImdbUrl() {
         return imdbUrl;
     }
@@ -17,4 +19,11 @@ public class Movie extends CollectorsItem {
         this.imdbUrl = imdbUrl;
     }
 
+    public String getImdbRating() {
+        return imdbRating;
+    }
+
+    public void setImdbRating(String imdbRating) {
+        this.imdbRating = imdbRating;
+    }
 }
