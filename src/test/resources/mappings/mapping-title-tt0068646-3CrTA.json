@@ -1,0 +1,19 @@
+{
+  "id" : "b7592ae7-a2db-3bc8-b02b-3c2484575955",
+  "request" : {
+    "url" : "/title/tt0068646",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 301,
+    "bodyFileName" : "body-title-tt0068646-3CrTA.txt",
+    "headers" : {
+      "Date" : "Tue, 20 Jun 2017 07:16:12 GMT",
+      "Server" : "Server",
+      "Location" : "/title/tt0068646/",
+      "Vary" : "Accept-Encoding,User-Agent",
+      "P3P" : "policyref=\"http://i.imdb.com/images/p3p.xml\",CP=\"CAO DSP LAW CUR ADM IVAo IVDo CONo OTPo OUR DELi PUBi OTRi BUS PHY ONL UNI PUR FIN COM NAV INT DEM CNT STA HEA PRE LOC GOV OTC \""
+    }
+  },
+  "uuid" : "b7592ae7-a2db-3bc8-b02b-3c2484575955"
+}

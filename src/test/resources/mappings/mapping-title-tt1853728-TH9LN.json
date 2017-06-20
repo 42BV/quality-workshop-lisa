@@ -1,0 +1,26 @@
+{
+  "id" : "bb4f7fc8-a22f-38d6-b65b-d79304b5f9e5",
+  "request" : {
+    "url" : "/title/tt1853728/",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 200,
+    "bodyFileName" : "body-title-tt1853728-TH9LN.txt",
+    "headers" : {
+      "Date" : "Tue, 20 Jun 2017 07:16:26 GMT",
+      "Server" : "Server",
+      "X-Frame-Options" : "SAMEORIGIN",
+      "Content-Security-Policy" : "frame-ancestors 'self' imdb.com *.imdb.com *.media-imdb.com withoutabox.com *.withoutabox.com amazon.com *.amazon.com amazon.co.uk *.amazon.co.uk amazon.de *.amazon.de translate.google.com images.google.com www.google.com www.google.co.uk search.aol.com bing.com www.bing.com",
+      "Ad-Unit" : "imdb.title_md.title.maindetails",
+      "Entity-Id" : "tt1853728",
+      "Content-Type" : "text/html;charset=UTF-8",
+      "Content-Language" : "en-US",
+      "Vary" : "Accept-Encoding,User-Agent",
+      "Set-Cookie" : [ "uu=BCYlFeRYPLIHC3mjimZfAPa_kALyPDGOWuyS6FuklVdZbLAQdL1kU2XdRqHT8HJ24hG_FztgTzUu%0D%0APbFw8hxRSxHA8frFuIi8_H7Z7k1maE1TGcI6GEXbKvX6IXpPgq9OhsZRQhqBZTjeccRSbkC2VX2a%0D%0AmBwm3atalHhg0_F_z8Gf1CgyUTLDnJ5zad87dNKjxd0-lMAMBaZRrhRqMG2EaJiGpRbz2gY2xEKd%0D%0AJxEzl7K2dM_t7Bb1NyIvwBXWFdt7YDJrpt8GJZD3YJGrVbpNgGT3bg%0D%0A; Domain=.imdb.com; Expires=Sun, 08-Jul-2085 10:30:33 GMT; Path=/", "session-id=781-3456450-4337873; Domain=.imdb.com; Expires=Sun, 08-Jul-2085 10:30:33 GMT; Path=/", "session-id-time=2128662985; Domain=.imdb.com; Expires=Sun, 08-Jul-2085 10:30:33 GMT; Path=/" ],
+      "P3P" : "policyref=\"http://i.imdb.com/images/p3p.xml\",CP=\"CAO DSP LAW CUR ADM IVAo IVDo CONo OTPo OUR DELi PUBi OTRi BUS PHY ONL UNI PUR FIN COM NAV INT DEM CNT STA HEA PRE LOC GOV OTC \"",
+      "Transfer-Encoding" : "chunked"
+    }
+  },
+  "uuid" : "bb4f7fc8-a22f-38d6-b65b-d79304b5f9e5"
+}

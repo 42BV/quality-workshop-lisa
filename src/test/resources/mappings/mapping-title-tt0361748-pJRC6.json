@@ -1,0 +1,19 @@
+{
+  "id" : "c68ceca6-849b-37d6-9da2-524950c578e4",
+  "request" : {
+    "url" : "/title/tt0361748",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 301,
+    "bodyFileName" : "body-title-tt0361748-pJRC6.txt",
+    "headers" : {
+      "Date" : "Tue, 20 Jun 2017 07:16:28 GMT",
+      "Server" : "Server",
+      "Location" : "/title/tt0361748/",
+      "Vary" : "Accept-Encoding,User-Agent",
+      "P3P" : "policyref=\"http://i.imdb.com/images/p3p.xml\",CP=\"CAO DSP LAW CUR ADM IVAo IVDo CONo OTPo OUR DELi PUBi OTRi BUS PHY ONL UNI PUR FIN COM NAV INT DEM CNT STA HEA PRE LOC GOV OTC \""
+    }
+  },
+  "uuid" : "c68ceca6-849b-37d6-9da2-524950c578e4"
+}

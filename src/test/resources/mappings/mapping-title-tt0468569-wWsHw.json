@@ -1,0 +1,19 @@
+{
+  "id" : "19b12fc7-f463-36fb-9fd3-795fc7769477",
+  "request" : {
+    "url" : "/title/tt0468569",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 301,
+    "bodyFileName" : "body-title-tt0468569-wWsHw.txt",
+    "headers" : {
+      "Date" : "Tue, 20 Jun 2017 07:16:15 GMT",
+      "Server" : "Server",
+      "Location" : "/title/tt0468569/",
+      "Vary" : "Accept-Encoding,User-Agent",
+      "P3P" : "policyref=\"http://i.imdb.com/images/p3p.xml\",CP=\"CAO DSP LAW CUR ADM IVAo IVDo CONo OTPo OUR DELi PUBi OTRi BUS PHY ONL UNI PUR FIN COM NAV INT DEM CNT STA HEA PRE LOC GOV OTC \""
+    }
+  },
+  "uuid" : "19b12fc7-f463-36fb-9fd3-795fc7769477"
+}

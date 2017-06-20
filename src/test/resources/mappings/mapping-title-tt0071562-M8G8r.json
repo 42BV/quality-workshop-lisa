@@ -1,0 +1,19 @@
+{
+  "id" : "37f03d47-078c-314d-a26a-194adb61e520",
+  "request" : {
+    "url" : "/title/tt0071562",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 301,
+    "bodyFileName" : "body-title-tt0071562-M8G8r.txt",
+    "headers" : {
+      "Date" : "Tue, 20 Jun 2017 07:16:13 GMT",
+      "Server" : "Server",
+      "Location" : "/title/tt0071562/",
+      "Vary" : "Accept-Encoding,User-Agent",
+      "P3P" : "policyref=\"http://i.imdb.com/images/p3p.xml\",CP=\"CAO DSP LAW CUR ADM IVAo IVDo CONo OTPo OUR DELi PUBi OTRi BUS PHY ONL UNI PUR FIN COM NAV INT DEM CNT STA HEA PRE LOC GOV OTC \""
+    }
+  },
+  "uuid" : "37f03d47-078c-314d-a26a-194adb61e520"
+}
