@@ -1,4 +1,5 @@
-# 
+# Milestone 01
+Replace H2 with Postgres.
 
 ## System requirements
 Make sure the following tools are installed on the system:
