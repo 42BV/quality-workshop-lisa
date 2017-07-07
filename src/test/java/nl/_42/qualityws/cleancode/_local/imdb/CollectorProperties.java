@@ -1,10 +1,5 @@
-package nl._42.qualityws.cleancode.config;
+package nl._42.qualityws.cleancode._local.imdb;
 
-import java.net.MalformedURLException;
-import java.net.URL;
-
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 import org.springframework.boot.context.properties.ConfigurationProperties;
 
 @ConfigurationProperties(prefix = "collector.imdb")
@@ -45,18 +40,6 @@ public class CollectorProperties {
 
     public void setStartWiremockServer(Boolean startWiremockServer) {
         this.startWiremockServer = startWiremockServer;
-    }
-
-    public String determineUrlToCall(String movieUrl) {
-        if (wiremockPort == null || wiremockPort.equals("")) {
-            return movieUrl;
-        }
-        try {
-            URL url = new URL(movieUrl);
-            return "http://localhost:" + wiremockPort + url.getPath();
-        } catch (MalformedURLException e) {
-            throw new RuntimeException(e);
-        }
     }
 
 }

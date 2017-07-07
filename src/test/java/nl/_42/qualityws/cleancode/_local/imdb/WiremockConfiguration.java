@@ -1,7 +1,6 @@
-package nl._42.qualityws.cleancode.shared.test.imdb;
+package nl._42.qualityws.cleancode._local.imdb;
 
 import nl._42.qualityws.cleancode.collectors_item.service.imdb.ProxyServer;
-import nl._42.qualityws.cleancode.config.CollectorProperties;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

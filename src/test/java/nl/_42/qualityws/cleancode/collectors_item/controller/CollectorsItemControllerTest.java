@@ -24,8 +24,8 @@ import nl._42.qualityws.cleancode.collectors_item.Book;
 import nl._42.qualityws.cleancode.collectors_item.Movie;
 import nl._42.qualityws.cleancode.collectors_item.service.CollectorsItemService;
 import nl._42.qualityws.cleancode.shared.AbstractWebIntegrationTest;
-import nl._42.qualityws.cleancode.shared.test.builder.CollectorBuilder;
-import nl._42.qualityws.cleancode.shared.test.builder.CollectorsItemBuilder;
+import nl._42.qualityws.cleancode._local.builder.CollectorBuilder;
+import nl._42.qualityws.cleancode._local.builder.CollectorsItemBuilder;
 
 public class CollectorsItemControllerTest extends AbstractWebIntegrationTest {
 

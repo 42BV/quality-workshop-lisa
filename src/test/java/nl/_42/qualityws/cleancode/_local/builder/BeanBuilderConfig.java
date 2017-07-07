@@ -1,4 +1,4 @@
-package nl._42.qualityws.cleancode.shared.test;
+package nl._42.qualityws.cleancode._local.builder;
 
 import io.beanmapper.BeanMapper;
 import nl._42.beanie.BeanBuilder;
@@ -13,7 +13,7 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.transaction.PlatformTransactionManager;
 
 @Configuration
-public class TestConfig {
+public class BeanBuilderConfig {
     
     @Autowired
     private BeanMapper beanMapper;
